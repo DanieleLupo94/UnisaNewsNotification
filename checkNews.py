@@ -71,6 +71,8 @@ def pulisci(testo):
 def notificaIFTTT(testo):
 	urlWebhook = 'https://maker.ifttt.com/trigger/inviaNotifica/with/key/crgmhm7kuG2plVg8e7W1_V'
 	req.post(urlWebhook, json={'value1': testo})
+	urlWebhook = 'https://maker.ifttt.com/trigger/notificaUnisa/with/key/c0heZrBg8aD-o0gQRPWB6ULNbiG2_rvcz-rfQx2qanr'
+	req.post(urlWebhook, json={'value1': testo})
 
 def checkConnection(host='http://www.google.it'):
     try:
